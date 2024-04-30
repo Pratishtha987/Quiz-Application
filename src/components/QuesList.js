@@ -37,10 +37,10 @@ export default function QuesList() {
         setDigitalClockTime(prevTime + 1);
         return prevTime + 1;
       });
-    }, 1000);
+    },1000);
     setTime(intevelId);
     return () => clearInterval(time);
-  }, []);
+  },[]);
 
   function submitHandler() {
     checkMarks();

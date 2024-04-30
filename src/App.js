@@ -1,9 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
-import ShowAnswer from "./components/ShowAnswer";
 import Quiz from "./components/Quiz";
 import LandingPage from "./components/LandingPage";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 function App() {
@@ -11,7 +9,7 @@ function App() {
 
   useEffect(() => {
     navigate("/");
-  }, []);
+  },[]);
 
   return (
     <div className="App">

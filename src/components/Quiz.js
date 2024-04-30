@@ -1,18 +1,13 @@
-// import './App.css';
-import QuesList from './QuesList';
-import { useState } from 'react';
+import QuesList from "./QuesList";
+import { useState } from "react";
 
 function Quiz() {
 
-  function submitHandler (){
-    setIsShowAns(!isShowAns);
-  }
-
-  const [isShowAns , setIsShowAns] = useState(false);
+  const [isShowAns, setIsShowAns] = useState(false);
   return (
     <div className="App">
       <h1>Quiz Game</h1>
-      <QuesList isShowAns={isShowAns} setIsShowAns={setIsShowAns}/>
+      <QuesList isShowAns={isShowAns} setIsShowAns={setIsShowAns} />
     </div>
   );
 }
