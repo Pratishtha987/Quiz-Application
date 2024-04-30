@@ -46,9 +46,8 @@ export default function QuesList() {
     checkMarks();
     setIsShowAns(true);
     clearInterval(time);
-    console.log({ time });
   }
-
+  console.log(timer);
   function setDigitalClockTime(currTime) {
     let temp = currTime;
     let sec;
