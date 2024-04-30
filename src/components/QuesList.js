@@ -78,7 +78,7 @@ export default function QuesList() {
     let count = 0;
     for (let key in answers) {
       elements.forEach((element) => {
-        if (key == element.id) {
+        if (+key == element.id) {
           if (answers[key] === element.correct_answer) count++;
           else {
             tempArr.push(element.id);
